@@ -1,3 +1,4 @@
+Este arquivo ainda não está finalizado
 # Cat Photo Album
 
 <!-- Os elementos em HTML têm tags de abertura, como <h1>, e tags de fechamento, como </h1>. 
