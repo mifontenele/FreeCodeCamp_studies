@@ -1,0 +1,17 @@
+*{
+    background-color: bisque;
+}
+
+figure, figcaption{
+    background-color:white;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+.image{
+   height: auto;
+   justify-content: center; 
+}

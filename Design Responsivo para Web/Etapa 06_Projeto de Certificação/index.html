@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1 id="title">Pesquisa de Satisfação</h1> 
+   <p id="description">Caro(a) Aluno(a), <br>Esta pesquisa tem como objetivo melhorar a qualidade dos serviços pretados por nossa escola! 
+    <br>A sua opinião é muito importante e as suas informações fornecidas serão mantidas no anonimato. 
+    <br>Responder a este questionário levará cerca de 10 minutos e, após a sua conclusão, você receberá automaticamente um e-mail contendo um cupom com desconto de 20% na matrícula do próximo semestre.</p>
+    <h2>Dados do Aluno:</h2>
+    <!-- inserindo formulário -->
+   <form id="survey-form">
+    <!-- inserindo as labels nome, e-mail e numero -->
+        <p><label for="name-label">Nome Completo: <input id="name-label" name="name-label" type="text" placeholder="informe aqui seu nome completo" required /></label></p>
+        <p><label for="email-label">E-mail: <input id="email-label" name="email-label" type="email" placeholder="informe aqui seu e-mail" required /></label></p>
+        <p><label for="number-label">Nº Matrícula: <input id="number-label" name="number-label" type="number" placeholder="informe aqui sua matrícula" min="0001" max="1000" required /></label></p>
+        <p>Tipo de Aluno:
+        <label for="novato"><input id="novato" type="radio" name="account-type" class="inline" /> Novato</label>
+        <label for="veterano"><input id="veterano" type="radio" name="account-type" class="inline" /> Veterano</label></p>
+    <h2>Dados do Curso:</h2>
+        <p>Curso:  
+        <select id="dropdown" name="curso" required=""> 
+            <option value="">(selecione)</option>
+            <option value="1">01 Administração</option>
+            <option value="2">02 Marketing</option>
+            <option value="3">03 Direito</option>
+            <option value="4">04 Medicina</option>
+            <option value="5">05 Contabilidade</option>
+        </select></p>
+        <p>Turno:
+            <label for="manha"><input id="manha" type="radio" name="account-type" class="inline" /> Manhã</label>
+            <label for="tarde"><input id="tarde" type="radio" name="account-type" class="inline" /> Tarde</label>
+            <label for="noite"><input id="noite" type="radio" name="account-type" class="inline" /> Tarde</label></p>
+    <h2>Avaliação do Aluno(a):</h2>
+        <p><fieldset><li>Excelente:</li></fieldset></p> 
+    </form>
+</body>
+</html>
+<!-- vvvvv -->

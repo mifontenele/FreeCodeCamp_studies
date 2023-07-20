@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa_MMAF</title>
+    <link rel="stylesheet" href="styles_copia.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Formulário de Pesquisa</h1>
+        <p id="description" class="description text-center">
+          Obrigado por nos ajudar a melhorar a qualidade dos nosso serviços!
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-grupo">
+          <label id="name-label" for="name">Nome</label>
+          <input id="name" type="text" name="name" class="form-control" placeholder="Informe seu nome completo" required>
+        </div>
+        <div class="form-grupo">
+          <label id="email-label" for="email">E-mail</label>
+          <input id="email" type="email" name="email"  class="form-control" placeholder="Informe seu melhor e-mail" required>
+        </div>
+        <div class="form-grupo">
+          <label id="number-label" for="number">Idade<span class="clue">(opcional)</span></label>
+          <input id="number" type="number" name="age" min="10" max="99" class="form-control" placeholder="Sua idade">
+        </div>
+        <div class="form-grupo">
+          <p>Qual sua relação com a escola?</p>
+          <select id="dropdown" name="role" class="form-control" required="">
+            <option disabled="" selected="" value="">(Selecione)</option>
+            <option value="student">Estudante</option>
+            <option value="job">Professor</option>
+            <option value="learner">Funcionário</option>
+            <option value="preferNo">Prefiro não informar</option>
+            <option value="other">Outras </option>
+          </select>
+        </div>
+
+        <div class="form-grupo">
+          <p>Você recomendaria a escola a um amigo(a)?</p>
+          <label>
+            <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked="">Sim</label>
+          <label>
+            <input name="user-recommend" value="maybe" type="radio" class="input-radio">Talvez</label>
+
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Não</label>
+        </div>
+
+        <div class="form-grupo">
+          <p>
+            O que podemos melhorar na escola?
+            <span class="dica">(selecione quantas opções desejar)</span>
+          </p>
+
+          <label><input name="prefer" value="oferta-cursos" type="checkbox" class="input-checkbox">Oferta de Cursos</label>
+          <label><input name="prefer" value="instalacoes" type="checkbox" class="input-checkbox">Instalações Prediais</label>
+          <label><input name="prefer" value="qualidade-ensino" type="checkbox" class="input-checkbox">Qualidade/ Metodologia de Ensino</label>
+          <label><input name="prefer" value="sistema-avaliacao" type="checkbox" class="input-checkbox">Sistema de Avaliação</label>
+          <label><input name="prefer" value="material-escolar" type="checkbox" class="input-checkbox">Material Didático</label>
+          <label><input name="prefer" value="atend-secretaria" type="checkbox" class="input-checkbox">Atendimento da Secretaria</label>
+          <label><input name="prefer" value="limpeza" type="checkbox" class="input-checkbox">Limpeza dos Ambientes</label>
+          <label><input name="prefer" value="estacionamento" type="checkbox" class="input-checkbox">Estacionamento</label>
+          <label><input name="prefer" value="comunicacao" type="checkbox" class="input-checkbox">Comunicação com os Pais e Alunos</label>
+          <label><input name="prefer" value="site" type="checkbox" class="input-checkbox">Site da Escola</label>
+          <label><input name="prefer" value="outros" type="checkbox" class="input-checkbox">Outros</label>
+        </div>
+
+        <div class="form-grupo">
+          <p>Algo mais a acrescentar?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Utilize este espaço para comentar, dar sugestões ou reclamar."></textarea>
+        </div>
+
+        <div class="form-grupo">
+          <button type="submit" id="submit" class="submit-button">
+            Enviar
+          </button>
+        </div>
+          <h5 class="text-center">
+            Este formulário foi desenvolvido por Milena Fontenele como trabalho final da Certificação 'Responsiove Web Desing' disponível em https://www.freecodecamp.org/learn/2022/responsive-web-design/
+          </h5>
+      </form>
+    </div>
+        
+  </body>
+  <footer>
+    
+</footer>
+</html>
